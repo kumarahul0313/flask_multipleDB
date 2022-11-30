@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>MySQL</title>
+</head>
+ 
+<body>
+    <h2>MySQL</h2>
+<br>
+<br>
+<br>
+
+
+<table border="2" style="width: 50%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    {% for emp in content %}
+    <tr>
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.city}}</td>
+    </tr>
+    {% endfor %}
+ 
+ 
+</body>
+ 
+</html>
